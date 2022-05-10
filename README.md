@@ -15,7 +15,7 @@ except for those 5 folders, there should be another two python files(**create_ou
 ## Procedure
 
 ### 1.inputs and modifications of create_config.py
-You should have to create protein and ligands pdbqt files before to do docking. protein pqdbt should be in the "protein" folder and all the ligands pdbqt files should be in "ligands" folder. Additionally, you should be modified the **create_config.py** script according to your grid box dimentions.
+You should have to create protein and ligands pdbqt files before docking. protein pqdbt should be in the "protein" folder and all the ligands pdbqt files should be in "ligands" folder. Additionally, you should modify the **create_config.py** script according to your grid box dimensions.
 
 ### 2.run create_config.py
 > python create_config.py
