@@ -1,7 +1,7 @@
 # How to do multiple docking using python
 ## Introduction
 
-Here I have given the guideline to proceed multiple docking using two simple python codes. By using this scripts, you can dock multiple ligands with a single protein. In here, I have docked 3 ligands with a protein(PDB ID:1EBZ). 
+Here I have given the guideline to proceed multiple docking using two simple python codes. By using this scripts, you can dock multiple ligands with a single protein. Here, I have docked 3 ligands with a protein(PDB ID:1EBZ). 
 
 First of all, you should create 5 new folders: **protein**, **ligands**, **config**, **output**, and **logs** 
   - protein: protein in pdbqt format 
@@ -15,17 +15,17 @@ except for those 5 folders, there should be another two python files(**create_ou
 ## Procedure
 
 ### 1.inputs and modifications of create_config.py
-You should have to create protein and ligands pdbqt files before docking. protein pqdbt should be in the "protein" folder and all the ligands pdbqt files should be in "ligands" folder. Additionally, you should modify the **create_config.py** script according to your grid box dimensions.
+You should have to create protein and ligands pdbqt files before docking. protein pqdbt should be in the "protein" folder and all the ligands pdbqt files should be in the "ligands" folder. Additionally, you should modify the **create_config.py** script according to your grid box dimensions.
 
 ### 2.run create_config.py
 > python create_config.py
 
-This will create configuration files for each ligand in "config" folder
+This will create configuration files for each ligand in the "config" folder
 
 ### 3.run create_output.py
 > python create_output.py
 
-This will create output files(ligand docking coordinates), and relative log files(docking scores) for each ligand in "outputs" folder, and "logs" folder, respectively. 
+This will create output files(ligand docking coordinates), and relative log files(docking scores) for each ligand in the "outputs" folder, and the "logs" folder, respectively. 
 
 
 Note: if vina ask for permission, run following codes before **python create_output.py**
